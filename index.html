@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#07111f">
+  <meta name="description" content="A late but heartfelt graduation congratulations.">
+  <title>Although It's Late 🫣 | Congratulations! 🎓</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="confetti" aria-hidden="true"></div>
+
+  <main class="app">
+    <section class="screen active" id="home">
+      <div class="glow"></div>
+      <div class="cap">🎓</div>
+      <p class="eyebrow">A little late… 🫣</p>
+      <h1>But the congratulations<br><span>still count! 🎉</span></h1>
+      <p class="intro">Because an achievement this big deserves to be celebrated — even if the message arrived a little late.</p>
+      <button class="primary" data-next="message">Open your surprise ✨</button>
+      <div class="scroll-hint">Tap to begin</div>
+    </section>
+
+    <section class="screen" id="message">
+      <div class="card message-card">
+        <span class="tiny-cap">🎓</span>
+        <p class="eyebrow">To an amazing graduate</p>
+        <h2>Congratulations<br>on your graduation! 🥂</h2>
+        <p>
+          You worked for this moment, pushed through the long days,
+          and made it to the finish line. Your graduation is proof that
+          the effort was worth it.
+        </p>
+        <p class="highlight">Late? Definitely. 🫣<br>Forgotten? Never. ❤️</p>
+        <button class="primary" data-next="gallery">See the memories 📸</button>
+      </div>
+    </section>
+
+    <section class="screen" id="gallery">
+      <div class="section-head">
+        <p class="eyebrow">A few moments worth remembering</p>
+        <h2>Graduate energy ✨</h2>
+      </div>
+      <div class="gallery">
+        <figure class="photo tall"><img src="assets/images/graduation-01.jpg" alt="Graduation portrait"></figure>
+        <figure class="photo"><img src="assets/images/graduation-02.jpg" alt="Graduate holding a graduation cap"></figure>
+        <figure class="photo"><img src="assets/images/graduation-03.jpg" alt="Graduate in academic gown"></figure>
+        <figure class="photo"><img src="assets/images/graduation-04.jpg" alt="Graduation portrait"></figure>
+        <figure class="photo"><img src="assets/images/graduation-05.jpg" alt="Graduate celebrating"></figure>
+      </div>
+      <button class="primary" data-next="video">One more thing 🎥</button>
+    </section>
+
+    <section class="screen" id="video">
+      <div class="section-head">
+        <p class="eyebrow">Press play</p>
+        <h2>A little graduation replay 🎬</h2>
+      </div>
+      <div class="video-wrap">
+        <video controls playsinline preload="metadata" poster="assets/images/graduation-01.jpg">
+          <source src="assets/videos/graduation-video.mp4" type="video/mp4">
+          Your browser does not support video playback.
+        </video>
+      </div>
+      <p class="video-note">Take a moment and enjoy it. You earned this. 🎓</p>
+      <button class="primary" data-next="final">Final message ❤️</button>
+    </section>
+
+    <section class="screen" id="final">
+      <div class="final-art">
+        <div class="ring r1"></div><div class="ring r2"></div>
+        <div class="big-cap">🎓</div>
+      </div>
+      <p class="eyebrow">And finally…</p>
+      <h2>Here's to everything<br>that comes next. ✨</h2>
+      <p class="final-text">
+        May this graduation be the beginning of even bigger dreams,
+        better opportunities, and many more reasons to celebrate.
+      </p>
+      <div class="signature">Congratulations, Graduate! 🥳</div>
+      <button class="ghost" data-next="home">Replay the surprise ↻</button>
+    </section>
+  </main>
+
+  <nav class="dots" aria-label="Website sections">
+    <button class="dot active" data-next="home" aria-label="Home"></button>
+    <button class="dot" data-next="message" aria-label="Message"></button>
+    <button class="dot" data-next="gallery" aria-label="Gallery"></button>
+    <button class="dot" data-next="video" aria-label="Video"></button>
+    <button class="dot" data-next="final" aria-label="Final message"></button>
+  </nav>
+
+  <script src="script.js"></script>
+</body>
+</html>
